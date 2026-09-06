@@ -38,13 +38,19 @@ SECRET_KEY = env(
 DEBUG = env_bool("DJANGO_DEBUG", False)
 
 ALLOWED_HOSTS = [
-    host.strip()
-    for host in env(
-        "DJANGO_ALLOWED_HOSTS",
-        "localhost,127.0.0.1,faq-chatbot-tylt.onrender.com"
-    ).split(",")
-    if host.strip()
+    "localhost",
+    "127.0.0.1",
 ]
+
+if os.environ.get("RENDER_EXTERNAL_HOSTNAME"):
+    ALLOWED_HOSTS.append(os.environ["RENDER_EXTERNAL_HOSTNAME"])
+
+if os.environ.get("DJANGO_ALLOWED_HOSTS"):
+    ALLOWED_HOSTS.extend(
+        host.strip()
+        for host in os.environ["DJANGO_ALLOWED_HOSTS"].split(",")
+        if host.strip()
+    )
 
 
 # --------------------------------------------------
