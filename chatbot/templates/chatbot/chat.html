@@ -1,0 +1,56 @@
+{% extends "chatbot/base.html" %}
+{% load static %}
+
+{% block title %}Chat - FAQ Chatbot{% endblock %}
+
+{% block content %}
+<div class="topbar">
+    <span>Logged in as <strong>{{ request.user.username }}</strong></span>
+    <form method="post" action="{% url 'logout' %}" class="logout-form">
+        {% csrf_token %}
+        <button type="submit" class="logout-btn">Log out</button>
+    </form>
+</div>
+
+<div class="chat-layout">
+
+    <!-- Sidebar: list of the user's past conversations -->
+    <aside class="sidebar">
+        <button id="new-chat-btn">+ New chat</button>
+        <ul id="conversation-list">
+            {% for conversation in conversations %}
+                <li class="conversation-item" data-id="{{ conversation.id }}">
+                    {{ conversation.title }}
+                </li>
+            {% empty %}
+                <li class="empty-hint">No chats yet. Click "New chat" to start.</li>
+            {% endfor %}
+        </ul>
+    </aside>
+
+    <!-- Main chat area -->
+    <main class="chat-main">
+        <div id="messages"></div>
+
+        <p id="error-box" class="error-text" hidden></p>
+
+        <form id="message-form">
+            <input
+                type="text"
+                id="message-input"
+                maxlength="500"
+                placeholder="Type your question..."
+                autocomplete="off"
+                disabled
+            >
+            <button type="submit" id="send-btn" disabled>Send</button>
+        </form>
+    </main>
+
+</div>
+
+<!-- This hidden input just gives our JavaScript the CSRF token Django needs. -->
+{% csrf_token %}
+
+<script src="{% static 'chatbot/js/chat.js' %}"></script>
+{% endblock %}

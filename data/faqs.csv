@@ -1,0 +1,21 @@
+question,answer,keywords,category,is_active
+How long does shipping take?,"Standard shipping takes 3 to 5 business days. Express shipping takes 1 to 2 business days.","shipping,delivery,how long,arrive,days",shipping,true
+Do you ship internationally?,"Yes, we ship to most countries. International orders usually take 7 to 14 business days.","international,abroad,overseas,worldwide,ship",shipping,true
+How can I track my order?,"You can track your order from the Orders page in your account using the tracking number we emailed you.","track,tracking,order status,where is my order",shipping,true
+What are the shipping costs?,"Shipping is free on orders over 50 dollars. Otherwise a flat fee of 5 dollars applies.","shipping cost,fee,charge,price,free shipping",shipping,true
+Can I change my delivery address after ordering?,"You can change your delivery address within 1 hour of placing the order by contacting support.","change address,delivery address,wrong address,update address",shipping,true
+What is your return policy?,"You can return any item within 30 days of delivery for a full refund, as long as it is unused.","return,returns,return policy,send back",returns,true
+How do I start a return?,"Go to your Orders page, select the item, and click Start Return to get a prepaid shipping label.","start return,return item,return process,how to return",returns,true
+How long do refunds take?,"Refunds are processed within 5 to 7 business days after we receive the returned item.","refund,money back,how long refund,reimburse",returns,true
+Can I exchange an item instead of returning it?,"Yes, you can request an exchange for a different size or color on the return page.","exchange,swap,different size,different color",returns,true
+Do I have to pay for return shipping?,"Return shipping is free if the item is defective. Otherwise a small fee is deducted from your refund.","return shipping,pay for return,return cost,return fee",returns,true
+What payment methods do you accept?,"We accept credit cards, debit cards, UPI, and PayPal.","payment,payment method,pay,credit card,debit card,upi,paypal",payments,true
+Is it safe to pay on this site?,"Yes, all payments are encrypted and processed through a secure, PCI-compliant payment gateway.","safe,secure,security,payment safe,fraud",payments,true
+Why was my payment declined?,"Payments are usually declined due to insufficient funds, an expired card, or incorrect card details. Please check with your bank.","payment declined,payment failed,card declined,transaction failed",payments,true
+Can I get an invoice for my order?,"Yes, an invoice is emailed automatically after every purchase and is also available on the Orders page.","invoice,receipt,bill,tax invoice",payments,true
+Do you offer cash on delivery?,"Cash on delivery is available for orders under 100 dollars in select locations.","cash on delivery,cod,pay on delivery",payments,true
+How do I create an account?,"Click the Register link on the login page and fill in your username, email, and password.","create account,register,sign up,new account",account,true
+I forgot my password. What do I do?,"Click Forgot Password on the login page and follow the instructions sent to your email.","forgot password,reset password,cant login,cannot login",account,true
+How do I update my email address?,"Go to Account Settings and update your email address there. You will need to confirm the new email.","update email,change email,edit email,account settings",account,true
+How do I delete my account?,"Contact customer support to request account deletion. This action cannot be undone.","delete account,close account,remove account",account,true
+What are your customer support hours?,"Our support team is available Monday to Saturday, 9 AM to 6 PM.","support hours,contact support,customer service hours,opening hours",account,true
